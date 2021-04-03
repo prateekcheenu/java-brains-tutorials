@@ -19,6 +19,7 @@ public class RatingsResource {
     public UserRating getUserRatings(@PathVariable("userId") String userId) {
         UserRating userRating = new UserRating();
         userRating.initData(userId);
+        System.out.println("inside ratings data service");
         return userRating;
 
     }
